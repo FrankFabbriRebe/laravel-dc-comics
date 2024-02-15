@@ -32,9 +32,9 @@ class MainController extends Controller
     public function show($id)
     {
 
-        $comics = Comic::find($id);
+        $comic = Comic::find($id);
 
-        return view('pages.show', compact('comics'));
+        return view('pages.show', compact('comic'));
 
     }
 
