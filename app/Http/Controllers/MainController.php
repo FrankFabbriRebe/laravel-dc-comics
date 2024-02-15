@@ -19,10 +19,12 @@ class MainController extends Controller
 
     }
 
-    // public function create()
-    // {
-    //     //
-    // }
+    public function create()
+    {
+
+        return view('pages.create');
+
+    }
 
     // public function store(Request $request)
     // {
