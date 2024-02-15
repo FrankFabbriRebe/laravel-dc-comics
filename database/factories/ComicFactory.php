@@ -17,7 +17,8 @@ class ComicFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => fake()->word(),
+            'author' => fake()->name(),
         ];
     }
 }
