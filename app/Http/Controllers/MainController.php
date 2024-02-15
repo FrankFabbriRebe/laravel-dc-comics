@@ -9,14 +9,13 @@ use App\Models\Comic;
 
 class MainController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return view('pages.index');
+
+        $comics = Comic::all();
+
+        return view('pages.index', compact('comics'));
     }
 
     /**
