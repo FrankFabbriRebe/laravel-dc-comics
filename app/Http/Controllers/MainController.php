@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// include Model
+use App\Models\Comic;
+
 class MainController extends Controller
 {
     /**
