@@ -17,6 +17,6 @@ class ComicTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Comic::factory()->count(10)->create();
     }
 }
