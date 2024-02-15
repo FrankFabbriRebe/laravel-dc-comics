@@ -8,5 +8,6 @@
 <li>
     <strong>Comic title: </strong>{{ $comic -> title}}
 </li>
+<a href="{{ route('route.show', $comic -> id) }}">Clik her for more details</a>
 @endforeach
 @endsection
