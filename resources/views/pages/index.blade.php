@@ -6,6 +6,8 @@
 
 <h1>Comic list</h1>
 
+<h2>Comics: {{ count($comics) }}</h2>
+
 <a href="{{route('route.create')}}">Click here for add a new comic</a>
 
 @foreach ($comics as $comic)
