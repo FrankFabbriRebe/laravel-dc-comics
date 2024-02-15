@@ -11,3 +11,5 @@ Route::get('/', [MainController::class, 'index'])->name('route.index');
 // route.show
 Route::get('/show{id}', [MainController::class, 'show'])->name('route.show');
 
+// route.create
+Route::get('/create', [MainController::class, 'create'])->name('route.create');
