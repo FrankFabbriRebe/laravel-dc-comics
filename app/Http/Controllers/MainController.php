@@ -26,10 +26,20 @@ class MainController extends Controller
 
     }
 
-    // public function store(Request $request)
-    // {
-    //     //
-    // }
+    public function store(Request $request)
+    {
+        $data = $request->all();
+
+        $newComic = new Comic();
+
+        $newComic->title = $data['title'];
+        $newComic->author = $data['author'];
+
+        $newComic->save();
+
+        return redirect()->route('route.show', $newComic->id);
+
+    }
 
     public function show($id)
     {
