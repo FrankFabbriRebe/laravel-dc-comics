@@ -50,10 +50,14 @@ class MainController extends Controller
 
     }
 
-    // public function edit($id)
-    // {
-    //     //
-    // }
+    public function edit($id)
+    {
+
+        $comic = Comic::find($id);
+
+        return view('pages.edit', compact('comic'));
+
+    }
 
 
     // public function update(Request $request, $id)
