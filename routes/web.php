@@ -16,7 +16,7 @@ Route::get('/create', [MainController::class, 'create'])->name('route.create');
 Route::post('/', [MainController::class, 'store'])->name('route.store');
 
 // route.delete
-Route::delete('/', [MainController::class, 'destroy'])->name('route.delete');
+Route::delete('/{id}', [MainController::class, 'destroy'])->name('route.delete');
 
 // route.show
 Route::get('/show{id}', [MainController::class, 'show'])->name('route.show');
