@@ -27,7 +27,11 @@
 <a href="{{ route('route.show', $comic -> id) }}">Clik here for more details</a>
 
 <!-- to delete element -->
-<form>
+<form action="{{ route('route.delete', $comic -> id) }}" method="POST">
+
+    @csrf
+    @method('DELETE')
+
     <input type="submit" value="X">
 </form>
 
