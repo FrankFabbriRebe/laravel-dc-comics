@@ -60,10 +60,21 @@ class MainController extends Controller
     }
 
 
-    // public function update(Request $request, $id)
-    // {
-    //     //
-    // }
+    public function update(Request $request, $id)
+    {
+
+        $comic = Comic::find($id);
+
+        $data = $request->all();
+
+        $comic->title = $data['title'];
+        $comic->author = $data['author'];
+
+        $comic->save();
+
+        return redirect()->route('route.show', $comic->id);
+
+    }
 
     public function destroy($id)
     {
