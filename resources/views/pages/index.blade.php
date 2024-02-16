@@ -35,6 +35,11 @@
     <input type="submit" value="X">
 </form>
 
+<!-- to get edit page -->
+<a href="{{ route('route.edit', $comic -> id) }}">
+    EDIT
+</a>
+
 <br>
 <br>
 
