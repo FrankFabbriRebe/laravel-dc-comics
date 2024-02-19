@@ -4,13 +4,17 @@
 @endsection
 @section('content')
 
-<h1>Comic list</h1>
-<br>
-<br>
+<div class="title">
+    <h1>Comic database</h1>
+</div>
 
-<h2>Comics: {{ count($comics) }}</h2>
-<br>
-<br>
+<div class="jumbotron">
+    <img src="{{ Vite::asset('/resources/img/comic.jpeg') }}" alt="">
+</div>
+
+<div class="subtitle">
+    <h2>Registered comics: {{ count($comics) }}</h2>
+</div>
 
 <!-- link to get create new comic page -->
 <a href="{{route('route.create')}}">Click here for add a new comic</a>
