@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 // include Model
 use App\Models\Comic;
 
+// include form request validation
+use App\Http\Requests\ComicFormRequest;
+
 class MainController extends Controller
 {
 
