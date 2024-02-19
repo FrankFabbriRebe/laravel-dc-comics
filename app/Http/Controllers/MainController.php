@@ -63,7 +63,7 @@ class MainController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(ComicFormRequest $request, $id)
     {
 
         $comic = Comic::find($id);
