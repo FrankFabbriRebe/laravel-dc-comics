@@ -17,3 +17,6 @@ Definire le perazioni CRUD con le relative view:
 - store()
 - edit()
 - delete/destroy
+
+#### Mileston 4
+Aggiungere le validazioni in modo da rendere più stabile il gestionale (sia per la creazione che per la modifica).
