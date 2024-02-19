@@ -24,8 +24,8 @@ class ComicFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'max:20',
-            'author' => 'min:2',
+            'title' => 'required | max:20',
+            'author' => 'required | min:2',
         ];
     }
 }
