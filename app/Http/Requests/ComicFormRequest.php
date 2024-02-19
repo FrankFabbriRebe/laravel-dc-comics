@@ -28,4 +28,16 @@ class ComicFormRequest extends FormRequest
             'author' => 'required | min:2',
         ];
     }
+
+    // costumise error message
+    public function messages()
+    {
+
+        return [
+            'title.required' => "Please add a comic title",
+            'title.max' => "Title has to be max 20 character long",
+            'author.required' => "Please add author",
+            'author.min' => "Author name has to be min 2 character long"
+        ];
+    }
 }
